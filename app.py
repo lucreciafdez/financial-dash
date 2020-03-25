@@ -47,7 +47,7 @@ def display_page(pathname):
     else:
         return overview.create_layout(app)
 
+server = app.server
 
 if __name__ == "__main__":
     app.run_server(debug=True)
-
