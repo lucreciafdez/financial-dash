@@ -11,13 +11,13 @@ def get_header(app):
         [
             html.Div(
                 [
-                    html.Img(
-                        src=app.get_asset_url("dash-financial-logo.png"),
-                        className="logo",
+                    html.Div(
+                            [html.H6("Deep Legal")],
+                            className="seven columns main-title",
                     ),
                     html.A(
-                        html.Button("Learn More", id="learn-more-button"),
-                        href="https://plot.ly/dash/pricing/",
+                        html.Button("Download PDF", id="learn-more-button"),
+                        href="javascript: w= window.print(); w.close(); ",
                     ),
                 ],
                 className="row",
@@ -25,7 +25,7 @@ def get_header(app):
             html.Div(
                 [
                     html.Div(
-                        [html.H5("Calibre Financial Index Fund Investor Shares")],
+                        [html.H5("Proveedores Remedios")],
                         className="seven columns main-title",
                     ),
                     html.Div(
